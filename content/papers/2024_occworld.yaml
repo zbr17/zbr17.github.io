@@ -1,0 +1,20 @@
+title: "OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving"
+authors:
+  - name: "Wenzhao Zheng"
+    equal_contrib: true
+  - name: "Weiliang Chen"
+    equal_contrib: true
+  - name: "Yuanhui Huang"
+  - name: "Borui Zhang"
+    highlight: true
+  - name: "Yueqi Duan"
+  - name: "Jiwen Lu"
+venue: "ECCV"
+year: 2024
+type: "publication"
+selected: false
+links:
+  - name: "Paper"
+    url: "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/2024_ECCV_2024_paper.php"
+  - name: "Code"
+    url: "https://github.com/wzzheng/OccWorld"

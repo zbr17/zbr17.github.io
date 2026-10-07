@@ -25,7 +25,7 @@ links:
     url: "https://neur-io.github.io/ReVQ/"
   - name: "HF Demo"
     url: "https://huggingface.co/spaces/AndyRaoTHU/ReVQ"
-  - name: "中文解读"
+  - name: "Chinese Overview"
     url: "https://zhuanlan.zhihu.com/p/1910111424765728444"
 abstract: >
   To investigate the relationship between continuous and discrete tokenizers, we propose <span class="highlight">ReVQ</span>. 

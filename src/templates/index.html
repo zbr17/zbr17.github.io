@@ -1,138 +1,111 @@
+{% from "components.html" import heading, link_list, records, authors %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ config.basic_info.name }}</title>
+  <meta name="color-scheme" content="light">
+  <title>{{ config.basic_info.name }} · Research & Intelligence</title>
   <meta name="author" content="{{ config.basic_info.name }}">
-  <meta name="description" content="{{ config.basic_info.name }} - {{ config.basic_info.role }}, {{ config.basic_info.university }}">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="description" content="{{ description }}">
+  <meta property="og:title" content="{{ config.basic_info.name }} · Research & Intelligence">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#fbfcfd">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/png" href="assets/images/icon.png">
+  <script src="assets/js/main.js" defer></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="site-shell">
-    <aside class="side-nav" aria-label="Section navigation">
-      <p>Contents</p>
-      <nav id="section-nav"></nav>
+    <aside class="sidebar" aria-label="Section navigation">
+      <a class="wordmark" href="#top" aria-label="Borui Zhang, back to top">bz<span class="wordmark-dot">.</span></a>
+      <p class="nav-label">Research & intelligence</p>
+      <nav id="section-nav">
+        {% for section in sections %}
+        <a href="#{{ section.id }}"><span class="nav-number">{{ "%02d" | format(loop.index) }}</span>{{ section.nav }}</a>
+        {% endfor %}
+      </nav>
+      <div class="sidebar-note"><span class="status-dot"></span>Tsinghua University<br><span class="sidebar-location">Beijing, China</span></div>
     </aside>
 
-  <main class="page">
-    <header class="hero">
-      <div class="hero-content">
-        <h1>{{ config.basic_info.name }}</h1>
-        <p class="affiliation">
-          <a href="{{ config.basic_info.group_url }}">{{ config.basic_info.group_name }}</a>,
-          {{ config.basic_info.university }}
-        </p>
-        <p class="advisor">
-          Advised by <a href="{{ config.basic_info.advisor_url }}">{{ config.basic_info.advisor_name }}</a>
-        </p>
-        <nav class="profile-links" aria-label="Profile links">
-          <a href="mailto:{{ config.basic_info.email }}">Email</a>
-          <a href="{{ config.basic_info.google_scholar }}">Google Scholar</a>
-          <a href="{{ config.basic_info.github }}">GitHub</a>
-          <a href="{{ config.basic_info.xiaohongshu }}">Xiaohongshu</a>
-          <a href="{{ config.basic_info.cv_link }}">CV</a>
-        </nav>
-      </div>
+    <main id="main" class="page">
+      <header id="top" class="hero">
+        <div class="hero-topline"><span class="eyebrow">Researcher / Builder</span><span class="hero-index" aria-hidden="true">BRZ — 001</span></div>
+        <div class="hero-grid">
+          <div class="hero-identity">
+            <h1>{{ config.basic_info.name }}<span class="chinese-name" lang="zh-CN">{{ config.basic_info.name_zh }}</span></h1>
+          </div>
+          <div class="hero-description">
+            <p class="hero-statement">{{ config.basic_info.headline }}</p>
+            <div class="hero-affiliations">
+              <p>{{ config.basic_info.role }}<span class="affiliation-separator">/</span><a href="{{ config.basic_info.group_url }}">{{ config.basic_info.university }}</a></p>
+              <p>{{ config.company.role }}<span class="affiliation-separator">/</span><a href="{{ config.company.url }}">{{ config.company.name }}</a></p>
+            </div>
+            <p class="hero-group">{{ config.basic_info.research_role }}</p>
+          </div>
+          <figure class="profile-photo">
+            <div class="photo-frame"><img src="{{ config.basic_info.profile_image }}" width="400" height="400" alt="Portrait of {{ config.basic_info.name }}" fetchpriority="high"></div>
+            <figcaption><span class="status-dot"></span>From research to real-world systems</figcaption>
+          </figure>
+        </div>
+        {{ link_list(profile_links, "profile-links", "Profile links") }}
+        <div class="hero-baseline" aria-hidden="true"><span>Understanding → Efficiency → Action</span><span>Scroll to explore ↓</span></div>
+      </header>
 
-      <figure class="profile-photo">
-        <img src="{{ config.basic_info.profile_image }}" alt="{{ config.basic_info.name }}">
-      </figure>
-    </header>
-
-    <section id="about" class="section" aria-labelledby="about-heading">
-        <h2 id="about-heading">About</h2>
-        <p>{{ config.about_me | safe }}</p>
-    </section>
-
-    <section id="research" class="section" aria-labelledby="research-heading">
-      <h2 id="research-heading">Research</h2>
-      <p class="research-summary">{{ config.research_intro | safe }}</p>
-    </section>
-
-    <section id="news" class="section" aria-labelledby="news-heading">
-      <h2 id="news-heading">News</h2>
-      <div class="news-panel">
-        <ul class="timeline-list">
-          {% for item in config.news %}
-          <li>
-            <time>{{ item.date }}</time>
-            <span>{{ item.content | safe }}</span>
-          </li>
+      {% for section in sections %}
+      <section id="{{ section.id }}" class="section" aria-labelledby="{{ section.id }}-heading">
+        {{ heading(section, loop.index) }}
+        {% if section.id == "about" %}
+        <div class="about-copy">{% for paragraph in config.about_me %}<p>{{ paragraph | safe }}</p>{% endfor %}</div>
+        {% elif section.id == "research" %}
+        <p class="section-intro">{{ config.research_intro | safe }}</p>
+        <div class="research-grid">
+          {% for area in config.research_areas %}
+          <article class="research-card">
+            <div class="research-card-top"><span class="card-index">{{ "%02d" | format(loop.index) }}</span><span class="research-symbol" aria-hidden="true">{{ ["↗", "⌘", "◎"][loop.index0 % 3] }}</span></div>
+            <h3>{{ area.title }}</h3>
+            <p class="research-label">{{ area.label }}</p>
+            <ul>{% for detail in area.details %}<li>{{ detail }}</li>{% endfor %}</ul>
+          </article>
           {% endfor %}
-        </ul>
-      </div>
-    </section>
-
-    <section id="preprints" class="section" aria-labelledby="preprints-heading">
-      <div class="section-heading">
-        <h2 id="preprints-heading">Preprints</h2>
-        <p><span class="star">*</span> indicates equal contribution</p>
-      </div>
-      {% for paper in preprints %}
-      {% include "paper_snippet.html" %}
+        </div>
+        {% elif section.id == "news" %}
+        <ul class="news-list">{% for item in config.news[:5] %}<li><time datetime="{{ item.date }}">{{ item.date }}</time><span>{{ item.content | safe }}</span></li>{% endfor %}</ul>
+        {% if config.news | length > 5 %}
+        <details class="news-archive"><summary>Earlier updates <span aria-hidden="true">↗</span></summary><ul class="news-list">{% for item in config.news[5:] %}<li><time datetime="{{ item.date }}">{{ item.date }}</time><span>{{ item.content | safe }}</span></li>{% endfor %}</ul></details>
+        {% endif %}
+        {% elif section.id in ["publications", "preprints"] %}
+        <div class="publication-list">
+          {% for paper in publications if section.id == "publications" %}{% include "paper_snippet.html" %}{% endfor %}
+          {% for paper in preprints if section.id == "preprints" %}{% include "paper_snippet.html" %}{% endfor %}
+        </div>
+        {% elif section.id == "experience" %}
+        <h3 class="subheading">Appointments</h3>{{ records(config.experience, "role") }}
+        <h3 class="subheading education-heading">Education</h3>{{ records(config.education, "degree") }}
+        {% elif section.id == "loopeva" %}
+        <div class="company-panel">
+          <div class="company-orbit" aria-hidden="true"><span>↗</span></div>
+          <p class="eyebrow">{{ config.company.role }} / {{ config.company.name }}</p>
+          <h3>{{ config.company.headline }}</h3>
+          <p>{{ config.company.summary }}</p>
+          <a class="text-link" href="{{ config.company.url }}">Explore {{ config.company.name }} <span aria-hidden="true">↗</span></a>
+        </div>
+        {% elif section.id == "honors" %}
+        <dl class="honors-list">{% for honor in config.honors %}<div><dt>{{ honor.year }}</dt><dd>{{ honor.title }}</dd></div>{% endfor %}</dl>
+        {% elif section.id == "services" %}
+        <dl class="services-list"><div><dt>Conference reviewer</dt><dd>{{ config.services.conference }}</dd></div><div><dt>Journal reviewer</dt><dd>{{ config.services.journal }}</dd></div></dl>
+        <div class="teaching-note"><h3>Teaching</h3>{% for item in config.teaching %}<p>{{ item.role }} · {{ item.organization }} · {{ item.date }}</p>{% endfor %}</div>
+        {% endif %}
+      </section>
       {% endfor %}
-    </section>
 
-    <section id="publications" class="section" aria-labelledby="publications-heading">
-      <h2 id="publications-heading">Selected Publications</h2>
-      {% for paper in publications %}
-      {% include "paper_snippet.html" %}
-      {% endfor %}
-    </section>
-
-    <section id="honors" class="section" aria-labelledby="honors-heading">
-      <h2 id="honors-heading">Honors and Awards</h2>
-      <table class="info-table">
-        <tbody>
-        {% for honor in config.honors %}
-          {% set parts = honor.split(" ", 1) %}
-          <tr>
-            <th scope="row">{{ parts[0] }}</th>
-            <td>{{ parts[1] if parts|length > 1 else honor }}</td>
-          </tr>
-        {% endfor %}
-        </tbody>
-      </table>
-    </section>
-
-    <section id="services" class="section" aria-labelledby="services-heading">
-      <h2 id="services-heading">Academic Services</h2>
-      <table class="info-table">
-        <tbody>
-          <tr>
-            <th scope="row">Conference Reviewer</th>
-            <td>{{ config.services.conference }}</td>
-          </tr>
-          <tr>
-            <th scope="row">Journal Reviewer</th>
-            <td>{{ config.services.journal }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
+      <footer class="footer">
+        <div><p class="footer-invitation">Let's connect.</p><a class="contact-email" href="mailto:{{ config.basic_info.email }}">{{ config.basic_info.email }} <span aria-hidden="true">↗</span></a></div>
+        <div class="footer-meta"><p>© {{ current_year }} {{ config.basic_info.name }}</p><p>Updated {{ last_updated }}</p><a href="#top">Back to top ↑</a></div>
+      </footer>
+    </main>
   </div>
-
-  <footer class="footer">
-    <p>© {{ config.basic_info.name }} | Last updated: {{ last_updated }}</p>
-    <p>Website template refactored from <a href="https://jonbarron.info/">Jon Barron</a>.</p>
-  </footer>
-  <script>
-    const nav = document.querySelector("#section-nav");
-    const sections = document.querySelectorAll("main section[id]");
-
-    sections.forEach((section) => {
-      const heading = section.querySelector("h2");
-      if (!heading) return;
-
-      const link = document.createElement("a");
-      link.href = `#${section.id}`;
-      link.textContent = heading.textContent;
-      nav.appendChild(link);
-    });
-  </script>
 </body>
 </html>

@@ -1,0 +1,5 @@
+# Preserve binary assets on Windows and in GitHub Actions.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary

@@ -1,52 +1,94 @@
 basic_info:
-  name: "Borui Zhang (张博睿)"
-  role: "Incoming Postdoctoral Researcher"
+  name: "Borui Zhang"
+  name_zh: "张博睿"
+  role: "Postdoctoral Researcher"
   university: "Tsinghua University"
   department: "Department of Automation"
   group_name: "i-VisionGroup"
   group_url: "http://ivg.au.tsinghua.edu.cn/"
   advisor_name: "Prof. Jiwen Lu"
   advisor_url: "http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/"
-  email: "zhang-br21@mails.tsinghua.edu.cn"
+  email: "zhang-borui@mail.tsinghua.edu.cn"
   google_scholar: "https://scholar.google.com/citations?user=MUN3ZNgAAAAJ"
   github: "https://github.com/zbr17/"
   xiaohongshu: "https://www.xiaohongshu.com/user/profile/60a0b6e50000000001001cf8?m_source=pwa"
-  cv_link: "assets/resume/张博睿-清华大学iVisionGroup.pdf"
+  cv_link: "assets/resume/BoruiZhang_CV.pdf"
   profile_image: "assets/images/BoruiZhang_small.png"
+  cv_image: "assets/images/BoruiZhang_cv.jpg"
+  headline: "Understanding intelligence. Building it into the world."
+  research_role: "Leading research in the Embodied Intelligence Systems Group"
+  cv_summary: >
+    Postdoctoral researcher in Prof. Jiwen Lu's laboratory at Tsinghua University,
+    leading research in the Embodied Intelligence Systems Group, and co-founder
+    and CEO of LoopEva. My work connects visual representation learning,
+    efficient multimodal models, explainable learning, and embodied intelligent systems.
 
-about_me: >
-  I received my Ph.D. degree from the Department of Automation, Tsinghua University in 2026, where I was advised by 
-  <a href="http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/">Prof. Jiwen Lu</a> at the 
-  <a href="http://ivg.au.tsinghua.edu.cn/">i-VisionGroup</a>. I will join Prof. Jiwen Lu's team as a postdoctoral researcher, 
-  where I will coordinate two research groups focusing on on-device agents and embodied brain. I received my B.E. degree 
-  from the Department of Automation and a second B.A. degree from the School of Economics and Management at Tsinghua University 
-  in 2021. My research aims to build interpretable, efficient, and embodied large-scale intelligent systems.
+profile_links:
+  - name: "Email"
+    field: "email"
+    prefix: "mailto:"
+  - name: "Google Scholar"
+    field: "google_scholar"
+    cv: true
+  - name: "GitHub"
+    field: "github"
+    cv: true
+  - name: "Xiaohongshu"
+    field: "xiaohongshu"
+  - name: "Full CV"
+    field: "cv_link"
+    primary: true
+    download: true
+
+about_me:
+  - >
+    I am a <strong>postdoctoral researcher at Tsinghua University</strong>, working with
+    <a href="http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/">Prof. Jiwen Lu</a> in the
+    <a href="http://ivg.au.tsinghua.edu.cn/">i-VisionGroup</a>. I lead research in the
+    <strong>Embodied Intelligence Systems Group</strong>, connecting advances in multimodal
+    models with intelligent systems that perceive, reason, and act.
+  - >
+    I am also the <strong>co-founder and CEO of <a href="http://www.loopeva.com/">LoopEva</a></strong>.
+    Across research and entrepreneurship, I am interested in making intelligence
+    more understandable, efficient, and useful in the physical world.
+  - >
+    I received my Ph.D. in Control Science and Engineering from Tsinghua University in
+    <strong>June 2026</strong>, advised by Prof. Jiwen Lu, and began my postdoctoral research
+    in <strong>September 2026</strong> as a Shuimu Scholar. Previously, I received a B.E.
+    in Automation and a second B.A. in Economics from Tsinghua University in 2021.
 
 research_intro: >
-  My current research focuses on the principles, systems, and applications of large-scale intelligent models. In particular, I study 
-  how to make large models more <strong>interpretable</strong>, <strong>lightweight</strong>, and <strong>agentic</strong>, with an emphasis on 
-  connecting theoretical understanding with practical deployment in multimodal and embodied scenarios.
+  From the representations a model learns to the decisions a system makes,
+  my research connects <strong>understanding</strong>, <strong>efficiency</strong>,
+  and <strong>action</strong>.
 research_areas:
-  - title: "Interpretability of Large Models"
+  - title: "Embodied Intelligence & Multimodal Agents"
+    label: "Perceive / reason / act"
     details:
-      - "Mechanistic and axiomatic explanations for large neural models."
-      - "Concept alignment, attribution, and interpretable model behaviors."
-  - title: "Efficient and Lightweight Large Models"
+      - "Multimodal reasoning, GUI grounding, and embodied intelligent systems."
+      - "Connecting model capabilities with real-world perception and interaction."
+  - title: "Efficient Models & Visual Representation"
+    label: "Represent / train / deploy"
     details:
-      - "Efficient training, inference, compression, and visual tokenization."
-      - "Deployment-oriented model design for resource-constrained environments."
-  - title: "Multimodal Agents"
+      - "Visual tokenization, vector quantization, and generative model pretraining."
+      - "Efficient training and deployment of multimodal foundation models."
+  - title: "Explainable Learning & Model Optimization"
+    label: "Interpret / diagnose / improve"
     details:
-      - "GUI agents, embodied agents, and multimodal decision-making systems."
-      - "Safety alignment and interpretable reasoning for agentic models."
+      - "Mechanistic and axiomatic explanations of neural model behavior."
+      - "Attribution, interpretable optimization, and reliable model decisions."
 
 news:
+  - date: "2026-09"
+    content: "Started postdoctoral research at <strong>Tsinghua University</strong> as a <strong>Shuimu Scholar</strong>, leading research in the Embodied Intelligence Systems Group."
+  - date: "2026-06"
+    content: "Received my <strong>Ph.D.</strong> from Tsinghua University."
   - date: "2026-02"
-    content: "1 paper on GUI Agent accepted to <strong>CVPR 2026</strong>."
+    content: "Our work on GUI grounding, <strong>BAMI</strong>, was accepted to <strong>CVPR 2026</strong>."
   - date: "2026-02"
-    content: "1 paper on explainable deep networks accepted to <strong>TPAMI 2026</strong>."
+    content: "Our work on explainable neural networks was accepted to <strong>TPAMI</strong>."
   - date: "2026-01"
-    content: "1 paper on explainable deep networks accepted to <strong>CJE 2026</strong>."
+    content: "Our work on fast Shapley value estimation was accepted to <strong>CJE</strong>."
   - date: "2024-07"
     content: "1 paper on autonomous driving accepted to <strong>ECCV 2024</strong>."
   - date: "2024-04"
@@ -64,17 +106,74 @@ news:
   - date: "2021-07"
     content: "1 paper on deep metric learning accepted to <strong>ICCV 2021</strong>."
 
+experience:
+  - date: "Sep. 2026 - Present"
+    role: "Postdoctoral Researcher · Shuimu Scholar"
+    organization: "Tsinghua University"
+    url: "http://ivg.au.tsinghua.edu.cn/"
+    description: "Prof. Jiwen Lu's laboratory. Leading research in the Embodied Intelligence Systems Group."
+  - date: "Current"
+    role: "Co-founder & CEO"
+    organization: "LoopEva"
+    url: "http://www.loopeva.com/"
+    description: "Connecting research on intelligent models with real-world robotic systems."
+
+education:
+  - date: "Sep. 2021 - Jun. 2026"
+    degree: "Ph.D. in Control Science and Engineering"
+    organization: "Tsinghua University · Department of Automation"
+    description: "Advised by Prof. Jiwen Lu. Visual model interpretability, multimodal model optimization, and visual representation learning."
+  - date: "Sep. 2017 - Jun. 2021"
+    degree: "B.E. in Automation"
+    organization: "Tsinghua University · Department of Automation"
+    description: "GPA: 3.81/4.0. Ranked 1st out of 181 students."
+  - date: "Sep. 2018 - Jun. 2021"
+    degree: "B.A. in Economics · Second Degree"
+    organization: "Tsinghua University · School of Economics and Management"
+    description: "A complementary foundation in economics and management."
+
+company:
+  name: "LoopEva"
+  url: "http://www.loopeva.com/"
+  role: "Co-founder & CEO"
+  headline: "Robotics in a loop."
+  summary: >
+    LoopEva connects robot capability, real-world deployment, and continuous improvement.
+    As co-founder and CEO, I work at the intersection of research, technical direction,
+    and building intelligent systems for the physical world.
+
 honors:
-  - "2025 Tsinghua University Outstanding Graduate Student CPC Member"
-  - "2024 12·9 Student Counselor Award"
-  - "2023 National Scholarship (Highest national honor for students)"
-  - "2022 Tsinghua Outstanding Student Cadre Award"
-  - "2022 Tsinghua Excellent Teaching Assistant Award"
-  - "2021 Tsinghua Future Scholars Scholarship (Rank: 1/181)"
-  - "2020 Changtong Scholarship (Highest dept. honor)"
-  - "2019 Jiang Nanxiang Scholarship (Highest junior honor)"
-  - "2018 National Scholarship"
+  - year: "2026"
+    title: "Shuimu Scholar, Tsinghua University"
+  - year: "2026"
+    title: "Outstanding Graduate, Beijing"
+  - year: "2026"
+    title: "Excellent Graduate, Tsinghua University"
+  - year: "2025"
+    title: "Outstanding Graduate Student CPC Member, Tsinghua University"
+  - year: "2024"
+    title: "12.9 Student Counselor Award, Tsinghua University"
+  - year: "2023"
+    title: "National Scholarship"
+  - year: "2022"
+    title: "Outstanding Student Cadre Award, Tsinghua University"
+  - year: "2022"
+    title: "Excellent Teaching Assistant Award, Tsinghua University"
+  - year: "2021"
+    title: "Future Scholars Scholarship, Tsinghua University (rank: 1/181)"
+  - year: "2020"
+    title: "Changtong Scholarship"
+  - year: "2019"
+    title: "Jiang Nanxiang Scholarship"
+  - year: "2018"
+    title: "National Scholarship"
 
 services:
-  conference: "CVPR (2022, 2024), ICCV (2023), ECCV, NeurIPS 2024, ICME (2022-2024), ACCV 2024, VCIP 2022"
-  journal: "IEEE Transactions on Image Processing (T-IP)"
+  conference: "CVPR (2022, 2024), ICCV (2023), ECCV, NeurIPS (2024), ICME (2022-2024), ACCV (2024), VCIP (2022)"
+  journal: "IEEE Transactions on Image Processing"
+teaching:
+  - role: "Teaching Assistant · Numerical Analysis"
+    organization: "Tsinghua University"
+    date: "2021-2022"
+    description: "Supported course teaching; received the university's Excellent Teaching Assistant Award in 2022."
+interests: "Photography, travel, classical music, badminton, table tennis, and running."

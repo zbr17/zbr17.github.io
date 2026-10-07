@@ -2,7 +2,6 @@ title: "Preventing Local Pitfalls in Vector Quantization via Optimal Transport"
 authors:
   - name: "Borui Zhang"
     highlight: true
-    equal_contrib: true
   - name: "Wenzhao Zheng"
     url: "https://wzzheng.net/"
   - name: "Jie Zhou"
@@ -22,7 +21,7 @@ links:
     url: "https://boruizhang.site/OptVQ/"
   - name: "HF Demo"
     url: "https://huggingface.co/spaces/BorelTHU/OptVQ"
-  - name: "中文解读"
+  - name: "Chinese Overview"
     url: "https://zhuanlan.zhihu.com/p/12811862624"
 abstract: >
   This study addresses the training instability of Vector-Quantized Networks (VQNs) by introducing 

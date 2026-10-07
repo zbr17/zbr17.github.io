@@ -1,0 +1,18 @@
+title: "Dynamic Metric Learning with Cross-Level Concept Distillation"
+authors:
+  - name: "Wenzhao Zheng"
+  - name: "Yuanhui Huang"
+  - name: "Borui Zhang"
+    highlight: true
+  - name: "Jie Zhou"
+  - name: "Jiwen Lu"
+venue: "ECCV"
+year: 2022
+type: "publication"
+selected: false
+pages: "197-213"
+links:
+  - name: "Paper"
+    url: "https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136840194.pdf"
+  - name: "Code"
+    url: "https://github.com/wzzheng/CLCD"

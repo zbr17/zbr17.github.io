@@ -1,0 +1,15 @@
+{% macro heading(section, number) -%}
+<div class="section-heading"><div><span class="section-number" aria-hidden="true">{{ "%02d" | format(number) }} /</span><h2 id="{{ section.id }}-heading">{{ section.title }}</h2></div>{% if section.note %}<p>{{ section.note }}</p>{% endif %}</div>
+{%- endmacro %}
+
+{% macro link_list(links, class_name, label) -%}
+<nav class="{{ class_name }}" aria-label="{{ label }}">{% for link in links %}<a href="{{ link.url }}"{% if link.get('primary') %} class="primary-link"{% endif %}{% if link.get('download') %} download{% endif %}>{{ link.name }} <span aria-hidden="true">{% if link.get('primary') %}↓{% else %}↗{% endif %}</span></a>{% endfor %}</nav>
+{%- endmacro %}
+
+{% macro authors(items) -%}
+{% for author in items %}{% if author.get('highlight') %}<strong>{{ author.name }}</strong>{% elif author.get('url') %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.get('equal_contrib') %}<sup class="star">*</sup>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}
+{%- endmacro %}
+
+{% macro records(items, title_field) -%}
+<div class="record-list">{% for item in items %}<article class="record"><p class="record-date">{{ item.date }}</p><div><h4>{{ item[title_field] }}</h4><p class="record-organization">{% if item.get('url') %}<a href="{{ item.url }}">{{ item.organization }}</a>{% else %}{{ item.organization }}{% endif %}</p><p class="record-description">{{ item.description }}</p></div></article>{% endfor %}</div>
+{%- endmacro %}

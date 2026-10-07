@@ -1,0 +1,20 @@
+title: "LowRankOcc: Tensor Decomposition and Low-Rank Recovery for Vision-based 3D Semantic Occupancy Prediction"
+authors:
+  - name: "Linqing Zhao"
+  - name: "Xiwei Xu"
+  - name: "Ziwei Wang"
+  - name: "Yunpeng Zhang"
+  - name: "Borui Zhang"
+    highlight: true
+  - name: "Wenzhao Zheng"
+  - name: "Dalong Du"
+  - name: "Jie Zhou"
+  - name: "Jiwen Lu"
+venue: "CVPR"
+year: 2024
+type: "publication"
+selected: false
+pages: "9806-9815"
+links:
+  - name: "Paper"
+    url: "https://openaccess.thecvf.com/content/CVPR2024/papers/Zhao_LowRankOcc_Tensor_Decomposition_and_Low-Rank_Recovery_for_Vision-based_3D_Semantic_CVPR_2024_paper.pdf"

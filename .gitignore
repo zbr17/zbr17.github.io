@@ -1,0 +1,13 @@
+# Local-only team document; never publish this source.
+LoopEva-团队介绍-v1.pdf
+
+# Build, preview, and Python caches.
+dist/
+tmp/
+output/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+Thumbs.db
+desktop.ini

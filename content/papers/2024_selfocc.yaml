@@ -1,0 +1,20 @@
+title: "SelfOcc: Self-Supervised Vision-Based 3D Occupancy Prediction"
+authors:
+  - name: "Yuanhui Huang"
+    equal_contrib: true
+  - name: "Wenzhao Zheng"
+    equal_contrib: true
+  - name: "Borui Zhang"
+    highlight: true
+  - name: "Jie Zhou"
+  - name: "Jiwen Lu"
+venue: "CVPR"
+year: 2024
+type: "publication"
+selected: false
+pages: "19946-19956"
+links:
+  - name: "Paper"
+    url: "https://openaccess.thecvf.com/content/CVPR2024/html/Huang_SelfOcc_Self-Supervised_Vision-Based_3D_Occupancy_Prediction_CVPR_2024_paper.html"
+  - name: "Code"
+    url: "https://github.com/huang-yh/SelfOcc"

@@ -25,7 +25,7 @@ links:
     url: "https://neur-io.github.io/SFTok/"
   - name: "HF Demo"
     url: "https://huggingface.co/spaces/AndyRaoTHU/SFTok"
-  - name: "中文解读"
+  - name: "Chinese Overview"
     url: "https://zhuanlan.zhihu.com/p/1976302623838716254"
 abstract: >
   We investigate iterative approaches for constructing discrete tokenizers and propose <span class="highlight">SFTok</span>. Analogous to the discrete diffusion paradigm, SFTok is well-suited for integration into Multimodal Large Models (MLLMs), facilitating the realization of a unified discrete diffusion framework.

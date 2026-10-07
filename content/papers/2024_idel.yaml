@@ -1,0 +1,15 @@
+title: "Toward Integrity and Detail With Ensemble Learning for Salient Object Detection in Optical Remote-Sensing Images"
+authors:
+  - name: "Kangjie Liu"
+  - name: "Borui Zhang"
+    highlight: true
+  - name: "Jiwen Lu"
+  - name: "Haibin Yan"
+venue: "TGRS"
+year: 2024
+type: "publication"
+kind: "journal"
+selected: false
+links:
+  - name: "Paper"
+    url: "https://doi.org/10.1109/TGRS.2024.3400032"

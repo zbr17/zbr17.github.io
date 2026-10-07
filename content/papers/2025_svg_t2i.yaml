@@ -1,0 +1,24 @@
+title: "SVG-T2I: Scaling Up Text-to-Image Latent Diffusion Model Without Variational Autoencoder"
+authors:
+  - name: "Minglei Shi"
+  - name: "Haolin Wang"
+  - name: "Borui Zhang"
+    highlight: true
+  - name: "Wenzhao Zheng"
+  - name: "Bohan Zeng"
+  - name: "Ziyang Yuan"
+  - name: "Xiaoshi Wu"
+  - name: "Yuanxing Zhang"
+  - name: "Huan Yang"
+  - name: "Xintao Wang"
+  - name: "Pengfei Wan"
+  - name: "Kun Gai"
+  - name: "Jie Zhou"
+  - name: "Jiwen Lu"
+venue: "arXiv"
+year: 2025
+type: "preprint"
+selected: false
+links:
+  - name: "Paper"
+    url: "https://arxiv.org/abs/2512.11749"
