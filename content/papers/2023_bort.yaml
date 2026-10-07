@@ -1,0 +1,22 @@
+title: "Bort: Towards Explainable Neural Networks with Bounded Orthogonal Constraint"
+authors:
+  - name: "Borui Zhang"
+    highlight: true
+  - name: "Wenzhao Zheng"
+    url: "https://wzzheng.net/"
+  - name: "Jie Zhou"
+    url: "https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1"
+  - name: "Jiwen Lu"
+    url: "http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/"
+venue: "ICLR"
+year: 2023
+type: "publication"
+image: "assets/images/publications/bort-iclr2023.png"
+links:
+  - name: "Paper"
+    url: "https://arxiv.org/pdf/2212.09062.pdf"
+  - name: "Code"
+    url: "https://github.com/zbr17/Bort"
+abstract: >
+  This paper proposes <span class="highlight">Bort</span>, an optimizer for improving model explainability 
+  with boundedness and orthogonality constraints, derived from model comprehensibility conditions.

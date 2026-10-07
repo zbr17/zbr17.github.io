@@ -1,0 +1,24 @@
+title: "Deep Relational Metric Learning"
+authors:
+  - name: "Wenzhao Zheng"
+    url: "https://wzzheng.net/"
+    equal_contrib: true
+  - name: "Borui Zhang"
+    highlight: true
+    equal_contrib: true
+  - name: "Jiwen Lu"
+    url: "http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/"
+  - name: "Jie Zhou"
+    url: "https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1"
+venue: "ICCV"
+year: 2021
+type: "publication"
+image: "assets/images/publications/drml-iccv2021.png"
+links:
+  - name: "Paper"
+    url: "https://arxiv.org/pdf/2108.10026.pdf"
+  - name: "Code"
+    url: "https://github.com/zbr17/DRML"
+abstract: >
+  This paper proposes to adaptively learn an ensemble of features that characterizes an image from different aspects, 
+  employing a relational module to capture correlations among features.

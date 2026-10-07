@@ -1,0 +1,26 @@
+title: "Exploring Unified Perspective For Fast Shapley Value Estimation"
+authors:
+  - name: "Borui Zhang"
+    highlight: true
+    equal_contrib: true
+  - name: "Baotong Tian"
+    url: "https://tongclass.ac.cn/author/baotong-tian/"
+    equal_contrib: true
+  - name: "Wenzhao Zheng"
+    url: "https://wzzheng.net/"
+  - name: "Jie Zhou"
+    url: "https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1"
+  - name: "Jiwen Lu"
+    url: "http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/"
+venue: "CJE"
+year: 2026
+type: "publication"
+image: "assets/images/publications/simshap-cje2026.png"
+links:
+  - name: "Paper"
+    url: "https://arxiv.org/pdf/2311.01010.pdf"
+  - name: "Code"
+    url: "https://github.com/User-tian/SimSHAP"
+abstract: >
+  This paper analyzes existing Shapley value estimators and proposes <span class="highlight">SimSHAP</span>.
+  Experiments validate that SimSHAP significantly accelerates the computation of accurate Shapley values.

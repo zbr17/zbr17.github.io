@@ -1,0 +1,31 @@
+title: "BAMI: Training-Free Bias Mitigation in GUI Grounding"
+authors:
+  - name: "Borui Zhang"
+    highlight: true
+    equal_contrib: true
+  - name: "Bo Zhang"
+    url: "https://micasa99.github.io/"
+    equal_contrib: true
+  - name: "Bo Wang"
+    url: "https://3bai233.github.io/"
+    equal_contrib: true
+  - name: "Wenzhao Zheng"
+    url: "https://wzzheng.net/"
+  - name: "Yuhao Cheng"
+  - name: "Liang Tang"
+  - name: "Yiqiang Yan"
+  - name: "Jie Zhou"
+    url: "https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1"
+  - name: "Jiwen Lu"
+    url: "http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/"
+venue: "CVPR"
+year: 2026
+type: "publication"
+image: "assets/images/publications/bami-cvpr2026.png"
+links:
+  - name: "Paper"
+    url: "https://github.com/Neur-IO/BAMI/blob/main/asset/bami-v2.pdf"
+  - name: "Code"
+    url: "https://github.com/Neur-IO/BAMI"
+abstract: >
+  This paper analyzes grounding biases in MLLMs and proposes <span class="highlight">BAMI</span>, a training-free framework. Experiments validate its state-of-the-art performance on ScreenSpot-Pro.

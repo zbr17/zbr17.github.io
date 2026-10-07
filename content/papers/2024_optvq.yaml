@@ -1,0 +1,30 @@
+title: "Preventing Local Pitfalls in Vector Quantization via Optimal Transport"
+authors:
+  - name: "Borui Zhang"
+    highlight: true
+    equal_contrib: true
+  - name: "Wenzhao Zheng"
+    url: "https://wzzheng.net/"
+  - name: "Jie Zhou"
+    url: "https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1"
+  - name: "Jiwen Lu"
+    url: "http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/"
+venue: "arXiv"
+year: 2024
+type: "preprint"
+image: "assets/images/publications/optvq-arxiv2024.png"
+links:
+  - name: "Paper"
+    url: "https://arxiv.org/pdf/2412.15195"
+  - name: "Code"
+    url: "https://github.com/zbr17/OptVQ"
+  - name: "Project Page"
+    url: "https://boruizhang.site/OptVQ/"
+  - name: "HF Demo"
+    url: "https://huggingface.co/spaces/BorelTHU/OptVQ"
+  - name: "中文解读"
+    url: "https://zhuanlan.zhihu.com/p/12811862624"
+abstract: >
+  This study addresses the training instability of Vector-Quantized Networks (VQNs) by introducing 
+  <span class="highlight">OptVQ</span>, a new method using the Sinkhorn algorithm for optimal transport. 
+  It achieves <span class="highlight">full codebook utilization (100%)</span> and outperforms current VQNs.

@@ -1,0 +1,31 @@
+title: "SFTok: Bridging the Performance Gap in Discrete Tokenizers"
+authors:
+  - name: "Qihang Rao"
+    url: "https://qihangrao.site/"
+    equal_contrib: true
+  - name: "Borui Zhang"
+    highlight: true
+    equal_contrib: true
+  - name: "Wenzhao Zheng"
+    url: "https://wzzheng.net/"
+  - name: "Jie Zhou"
+    url: "https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1"
+  - name: "Jiwen Lu"
+    url: "http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/"
+venue: "arXiv"
+year: 2025
+type: "preprint"
+image: "assets/images/publications/sftok-arxiv2025.png"
+links:
+  - name: "Paper"
+    url: "https://arxiv.org/pdf/2512.16910v1"
+  - name: "Code"
+    url: "https://github.com/Neur-IO/SFTok"
+  - name: "Project Page"
+    url: "https://neur-io.github.io/SFTok/"
+  - name: "HF Demo"
+    url: "https://huggingface.co/spaces/AndyRaoTHU/SFTok"
+  - name: "中文解读"
+    url: "https://zhuanlan.zhihu.com/p/1976302623838716254"
+abstract: >
+  We investigate iterative approaches for constructing discrete tokenizers and propose <span class="highlight">SFTok</span>. Analogous to the discrete diffusion paradigm, SFTok is well-suited for integration into Multimodal Large Models (MLLMs), facilitating the realization of a unified discrete diffusion framework.

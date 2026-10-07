@@ -1,0 +1,22 @@
+title: "Path Choice Matters for Clear Attribution in Path Methods"
+authors:
+  - name: "Borui Zhang"
+    highlight: true
+  - name: "Wenzhao Zheng"
+    url: "https://wzzheng.net/"
+  - name: "Jie Zhou"
+    url: "https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1"
+  - name: "Jiwen Lu"
+    url: "http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/"
+venue: "ICLR"
+year: 2024
+type: "publication"
+image: "assets/images/publications/samp-iclr2024.png"
+links:
+  - name: "Paper"
+    url: "https://arxiv.org/pdf/2401.10442.pdf"
+  - name: "Code"
+    url: "https://github.com/zbr17/SAMP"
+abstract: >
+  We introduced the Concentration Principle and developed <span class="highlight">SAMP</span>, 
+  an efficient model-agnostic interpreter incorporating infinitesimal constraint (IC) and momentum strategy (MS).

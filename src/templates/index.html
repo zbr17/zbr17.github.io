@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ config.basic_info.name }}</title>
+  <meta name="author" content="{{ config.basic_info.name }}">
+  <meta name="description" content="{{ config.basic_info.name }} - {{ config.basic_info.role }}, {{ config.basic_info.university }}">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/icon.png">
+</head>
+
+<body>
+  <div class="site-shell">
+    <aside class="side-nav" aria-label="Section navigation">
+      <p>Contents</p>
+      <nav id="section-nav"></nav>
+    </aside>
+
+  <main class="page">
+    <header class="hero">
+      <div class="hero-content">
+        <h1>{{ config.basic_info.name }}</h1>
+        <p class="affiliation">
+          <a href="{{ config.basic_info.group_url }}">{{ config.basic_info.group_name }}</a>,
+          {{ config.basic_info.university }}
+        </p>
+        <p class="advisor">
+          Advised by <a href="{{ config.basic_info.advisor_url }}">{{ config.basic_info.advisor_name }}</a>
+        </p>
+        <nav class="profile-links" aria-label="Profile links">
+          <a href="mailto:{{ config.basic_info.email }}">Email</a>
+          <a href="{{ config.basic_info.google_scholar }}">Google Scholar</a>
+          <a href="{{ config.basic_info.github }}">GitHub</a>
+          <a href="{{ config.basic_info.xiaohongshu }}">Xiaohongshu</a>
+          <a href="{{ config.basic_info.cv_link }}">CV</a>
+        </nav>
+      </div>
+
+      <figure class="profile-photo">
+        <img src="{{ config.basic_info.profile_image }}" alt="{{ config.basic_info.name }}">
+      </figure>
+    </header>
+
+    <section id="about" class="section" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>{{ config.about_me | safe }}</p>
+    </section>
+
+    <section id="research" class="section" aria-labelledby="research-heading">
+      <h2 id="research-heading">Research</h2>
+      <p class="research-summary">{{ config.research_intro | safe }}</p>
+    </section>
+
+    <section id="news" class="section" aria-labelledby="news-heading">
+      <h2 id="news-heading">News</h2>
+      <div class="news-panel">
+        <ul class="timeline-list">
+          {% for item in config.news %}
+          <li>
+            <time>{{ item.date }}</time>
+            <span>{{ item.content | safe }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <section id="preprints" class="section" aria-labelledby="preprints-heading">
+      <div class="section-heading">
+        <h2 id="preprints-heading">Preprints</h2>
+        <p><span class="star">*</span> indicates equal contribution</p>
+      </div>
+      {% for paper in preprints %}
+      {% include "paper_snippet.html" %}
+      {% endfor %}
+    </section>
+
+    <section id="publications" class="section" aria-labelledby="publications-heading">
+      <h2 id="publications-heading">Selected Publications</h2>
+      {% for paper in publications %}
+      {% include "paper_snippet.html" %}
+      {% endfor %}
+    </section>
+
+    <section id="honors" class="section" aria-labelledby="honors-heading">
+      <h2 id="honors-heading">Honors and Awards</h2>
+      <table class="info-table">
+        <tbody>
+        {% for honor in config.honors %}
+          {% set parts = honor.split(" ", 1) %}
+          <tr>
+            <th scope="row">{{ parts[0] }}</th>
+            <td>{{ parts[1] if parts|length > 1 else honor }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </section>
+
+    <section id="services" class="section" aria-labelledby="services-heading">
+      <h2 id="services-heading">Academic Services</h2>
+      <table class="info-table">
+        <tbody>
+          <tr>
+            <th scope="row">Conference Reviewer</th>
+            <td>{{ config.services.conference }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Journal Reviewer</th>
+            <td>{{ config.services.journal }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  </div>
+
+  <footer class="footer">
+    <p>© {{ config.basic_info.name }} | Last updated: {{ last_updated }}</p>
+    <p>Website template refactored from <a href="https://jonbarron.info/">Jon Barron</a>.</p>
+  </footer>
+  <script>
+    const nav = document.querySelector("#section-nav");
+    const sections = document.querySelectorAll("main section[id]");
+
+    sections.forEach((section) => {
+      const heading = section.querySelector("h2");
+      if (!heading) return;
+
+      const link = document.createElement("a");
+      link.href = `#${section.id}`;
+      link.textContent = heading.textContent;
+      nav.appendChild(link);
+    });
+  </script>
+</body>
+</html>

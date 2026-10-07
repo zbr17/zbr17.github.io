@@ -1,0 +1,22 @@
+title: "Attributable Visual Similarity Learning"
+authors:
+  - name: "Borui Zhang"
+    highlight: true
+  - name: "Wenzhao Zheng"
+    url: "https://wzzheng.net/"
+  - name: "Jie Zhou"
+    url: "https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1"
+  - name: "Jiwen Lu"
+    url: "http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/"
+venue: "CVPR"
+year: 2022
+type: "publication"
+image: "assets/images/publications/avsl-cvpr2022.png"
+links:
+  - name: "Paper"
+    url: "https://arxiv.org/pdf/2203.14932.pdf"
+  - name: "Code"
+    url: "https://github.com/zbr17/AVSL"
+abstract: >
+  We propose <span class="highlight">AVSL</span>, which employs a generalized similarity learning paradigm 
+  to represent the similarity between images with a graph for a more accurate and explainable measure.

@@ -1,0 +1,21 @@
+title: "Alignment-Invertibility Regularization for Explainable Neural Networks"
+authors:
+  - name: "Borui Zhang"
+    highlight: true
+  - name: "Qihang Rao"
+    url: "https://qihangrao.site/"
+  - name: "Jie Zhou"
+    url: "https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1"
+  - name: "Jiwen Lu"
+    url: "http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/"
+venue: "TPAMI"
+year: 2026
+type: "publication"
+image: "assets/images/publications/bort-tpami2026.png"
+links:
+  - name: "Paper"
+    url: "https://ieeexplore.ieee.org/document/11397554"
+  - name: "Code"
+    url: "https://github.com/zbr17/Bort"
+abstract: >
+  This journal extension of <span class="highlight">Bort</span> introduces a plug-and-play optimizer enforcing boundedness and orthogonality constraints derived from alignment and invertibility to enhance explainability, with a data-aware extension DBort.

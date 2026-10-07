@@ -1,0 +1,80 @@
+basic_info:
+  name: "Borui Zhang (张博睿)"
+  role: "Incoming Postdoctoral Researcher"
+  university: "Tsinghua University"
+  department: "Department of Automation"
+  group_name: "i-VisionGroup"
+  group_url: "http://ivg.au.tsinghua.edu.cn/"
+  advisor_name: "Prof. Jiwen Lu"
+  advisor_url: "http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/"
+  email: "zhang-br21@mails.tsinghua.edu.cn"
+  google_scholar: "https://scholar.google.com/citations?user=MUN3ZNgAAAAJ"
+  github: "https://github.com/zbr17/"
+  xiaohongshu: "https://www.xiaohongshu.com/user/profile/60a0b6e50000000001001cf8?m_source=pwa"
+  cv_link: "assets/resume/张博睿-清华大学iVisionGroup.pdf"
+  profile_image: "assets/images/BoruiZhang_small.png"
+
+about_me: >
+  I received my Ph.D. degree from the Department of Automation, Tsinghua University in 2026, where I was advised by 
+  <a href="http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/">Prof. Jiwen Lu</a> at the 
+  <a href="http://ivg.au.tsinghua.edu.cn/">i-VisionGroup</a>. I will join Prof. Jiwen Lu's team as a postdoctoral researcher, 
+  where I will coordinate two research groups focusing on on-device agents and embodied brain. I received my B.E. degree 
+  from the Department of Automation and a second B.A. degree from the School of Economics and Management at Tsinghua University 
+  in 2021. My research aims to build interpretable, efficient, and embodied large-scale intelligent systems.
+
+research_intro: >
+  My current research focuses on the principles, systems, and applications of large-scale intelligent models. In particular, I study 
+  how to make large models more <strong>interpretable</strong>, <strong>lightweight</strong>, and <strong>agentic</strong>, with an emphasis on 
+  connecting theoretical understanding with practical deployment in multimodal and embodied scenarios.
+research_areas:
+  - title: "Interpretability of Large Models"
+    details:
+      - "Mechanistic and axiomatic explanations for large neural models."
+      - "Concept alignment, attribution, and interpretable model behaviors."
+  - title: "Efficient and Lightweight Large Models"
+    details:
+      - "Efficient training, inference, compression, and visual tokenization."
+      - "Deployment-oriented model design for resource-constrained environments."
+  - title: "Multimodal Agents"
+    details:
+      - "GUI agents, embodied agents, and multimodal decision-making systems."
+      - "Safety alignment and interpretable reasoning for agentic models."
+
+news:
+  - date: "2026-02"
+    content: "1 paper on GUI Agent accepted to <strong>CVPR 2026</strong>."
+  - date: "2026-02"
+    content: "1 paper on explainable deep networks accepted to <strong>TPAMI 2026</strong>."
+  - date: "2026-01"
+    content: "1 paper on explainable deep networks accepted to <strong>CJE 2026</strong>."
+  - date: "2024-07"
+    content: "1 paper on autonomous driving accepted to <strong>ECCV 2024</strong>."
+  - date: "2024-04"
+    content: "1 paper on salient object detection accepted to <strong>TGRS 2024</strong>."
+  - date: "2024-02"
+    content: "2 papers on autonomous driving accepted to <strong>CVPR 2024</strong>."
+  - date: "2024-01"
+    content: "1 paper on explainable deep networks accepted to <strong>ICLR 2024</strong>."
+  - date: "2023-01"
+    content: "1 paper on explainable deep networks accepted to <strong>ICLR 2023</strong>."
+  - date: "2022-07"
+    content: "1 paper on dynamic metric learning accepted to <strong>ECCV 2022</strong>."
+  - date: "2022-03"
+    content: "1 paper on explainable metric learning accepted to <strong>CVPR 2022</strong>."
+  - date: "2021-07"
+    content: "1 paper on deep metric learning accepted to <strong>ICCV 2021</strong>."
+
+honors:
+  - "2025 Tsinghua University Outstanding Graduate Student CPC Member"
+  - "2024 12·9 Student Counselor Award"
+  - "2023 National Scholarship (Highest national honor for students)"
+  - "2022 Tsinghua Outstanding Student Cadre Award"
+  - "2022 Tsinghua Excellent Teaching Assistant Award"
+  - "2021 Tsinghua Future Scholars Scholarship (Rank: 1/181)"
+  - "2020 Changtong Scholarship (Highest dept. honor)"
+  - "2019 Jiang Nanxiang Scholarship (Highest junior honor)"
+  - "2018 National Scholarship"
+
+services:
+  conference: "CVPR (2022, 2024), ICCV (2023), ECCV, NeurIPS 2024, ICME (2022-2024), ACCV 2024, VCIP 2022"
+  journal: "IEEE Transactions on Image Processing (T-IP)"

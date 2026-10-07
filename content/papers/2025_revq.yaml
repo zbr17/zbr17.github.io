@@ -1,0 +1,32 @@
+title: "Quantize-then-Rectify: Efficient VQ-VAE Training"
+authors:
+  - name: "Borui Zhang"
+    highlight: true
+    equal_contrib: true
+  - name: "Qihang Rao"
+    url: "https://qihangrao.site/"
+    equal_contrib: true
+  - name: "Wenzhao Zheng"
+    url: "https://wzzheng.net/"
+  - name: "Jie Zhou"
+    url: "https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1"
+  - name: "Jiwen Lu"
+    url: "http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/"
+venue: "arXiv"
+year: 2025
+type: "preprint"
+image: "assets/images/publications/revq-arxiv2025.png"
+links:
+  - name: "Paper"
+    url: "https://arxiv.org/pdf/2507.10547"
+  - name: "Code"
+    url: "https://github.com/Neur-IO/ReVQ"
+  - name: "Project Page"
+    url: "https://neur-io.github.io/ReVQ/"
+  - name: "HF Demo"
+    url: "https://huggingface.co/spaces/AndyRaoTHU/ReVQ"
+  - name: "中文解读"
+    url: "https://zhuanlan.zhihu.com/p/1910111424765728444"
+abstract: >
+  To investigate the relationship between continuous and discrete tokenizers, we propose <span class="highlight">ReVQ</span>. 
+  This method yields a high-performance VQ-VAE requiring only 40 GPU hours of training on a single RTX 4090.
